@@ -15,13 +15,15 @@ const handler = async (m, {
     args,
     usedPrefix
 }) => {
-    if (!text) throw `give a text to search Example: *${usedPrefix + command}* mujhe rang de naat`;
+    if (!text) throw `give a text to search Example: *${usedPrefix + command}* sefali odia song`;
     conn.GURUPLAY = conn.GURUPLAY ? conn.GURUPLAY : {};
     await conn.reply(m.chat, wait, m);
     const result = await searchAndDownloadMusic(text);
-    const infoText = `🎵🎧🎼『 *ᴘʀɪɴᴄᴇ ᴘʟᴀʏᴇʀ* 』🎼🎧🎵
+    const infoText = `🎧🎼『 *ᴘʀɪɴᴄᴇ ᴘʟᴀʏᴇʀ* 』🎼🎧
+
+    
    
-*Rᴇᴘʟʏ ᴡɪᴛʜ ɴᴜᴍʙᴇʀ ᴛᴏ ɢᴇᴛ ᴛʜᴇ sᴏɴɢ*`;
+*🎶ᖇEᑭᒪY ᗯITᕼ ᑎᑌᗰᗷEᖇ TO GET YOᑌᖇ ᗩᑌᗪIO🎵*`;
 
 const orderedLinks = result.allLinks.map((link, index) => {
     const sectionNumber = index + 1;
@@ -45,7 +47,7 @@ const orderedLinks = result.allLinks.map((link, index) => {
                 delete: key
             });
             delete conn.GURUPLAY[m.sender];
-        }, 240 * 1000),
+        }, 150 * 1000),
     };
 };
 
@@ -59,6 +61,7 @@ handler.before = async (m, {
         key,
         timeout
     } = conn.GURUPLAY[m.sender];
+    console.log(conn.GURUPLAY)
     if (!m.quoted || m.quoted.id !== key.id || !m.text) return;
     const choice = m.text.trim();
     const inputNumber = Number(choice);
@@ -95,8 +98,9 @@ handler.before = async (m, {
         await conn.sendMessage(m.chat, doc, { quoted: m });
     
     
-        clearTimeout(timeout);
-        delete conn.GURUPLAY[m.sender];
+       
+
+        
     } else {
         m.reply("Invalid sequence number. Please select the appropriate number from the list above.\nBetween 1 to " + result.allLinks.length);
     }
@@ -166,4 +170,4 @@ function generateRandomName() {
     const randomNoun = nouns[Math.floor(Math.random() * nouns.length)];
     
     return randomAdjective + "-" + randomNoun;
-}
+            }

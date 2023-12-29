@@ -19,6 +19,8 @@
  
 <h1 align="center">🛡️ᑭᖇIᑎᑕᕮ ᗷOT ᗰᗪ🛡️</h1>
 
+#### 🪩 To Change the owner number click here [Config](https://github.com/PRINCE-GDS/THE-PRINCE-BOT/blob/main/config.js#L8)🪩
+
 <h2 align="left">ＳＥＳＳＩＯＮ ＩＤ (ＰＡＩＲ ＣＯＤＥ)</h2>
 <p align="left">
 <a href="https://replit.com/@iycwwwuaaipgfjs/Prince-PairCode?v=1"><img height= "40" title="Author" src="https://img.shields.io/badge/SESSION ID-black?style=for-the-badge&logo=replit"></a>
