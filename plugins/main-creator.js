@@ -4,9 +4,9 @@ let pp = princeImg.getRandom()
 const cat = `*_🛡️ᴘʀɪɴᴄᴇ ʙᴏᴛ ᴍᴅ🛡️_*
 
 
-*_—◉ ᴘʀɪɴᴄᴇ ʙᴏᴛ ᴏᴡɴᴇʀ 𝟷 wa.me/923092668108_*
+*_—◉ ᴘʀɪɴᴄᴇ ʙᴏᴛ ᴏᴡɴᴇʀ 𝟷 wa.me/2328022638180_*
 
-*_—◉ ᴘʀɪɴᴄᴇ ʙᴏᴛ ᴏᴡɴᴇʀ 2 wa.me/92_*
+*_—◉ ᴘʀɪɴᴄᴇ ʙᴏᴛ ᴏᴡɴᴇʀ 2 wa.me/2348022638180_*
 *---------------------*
 
 
@@ -15,7 +15,7 @@ const cat = `*_🛡️ᴘʀɪɴᴄᴇ ʙᴏᴛ ᴍᴅ🛡️_*
 
 await conn.sendFile(m.chat, pp, 'menuvid', cat, fkontak)
 }
-handler.help = ['owner', 'creator']
+handler.help = ['Stephen Oyedepo', 'creator']
 handler.tags = ['info']
 handler.command = /^(owner|creator|propietario|dueño|dueña|propietaria|dueño|creadora|creador)$/i
 
